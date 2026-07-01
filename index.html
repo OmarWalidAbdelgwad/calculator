@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="age-prompt">
+            <h1>ادخل عمرك للمتابعه</h1>
+            <input type="number" id="input-age" placeholder="ادخل عمرك هنا">
+            <button id="btn">تاكيد</button>
+        </div>
+        <div id="calculator">
+            <h1>اله الحاسبه الخاصه بسمسمتييي</h1>
+            <input type="text" id="display" readonly>
+            <div id="buttons">
+
+                <button onclick="cleardisplay()"  class="clear">مسح</button>
+                <button onclick="deletelast()" class="clear">حذف</button>
+                <button onclick="appendtodisplay(7)">7</button>
+                <button onclick="appendtodisplay(8)">8</button>
+                <button onclick="appendtodisplay(9)">9</button>
+                <button onclick="appendtodisplay('/')" class="opreator">/</button>
+                <button onclick="appendtodisplay(4)">4</button>
+                <button onclick="appendtodisplay(5)">5</button>
+                <button onclick="appendtodisplay(6)">6</button>
+                <button onclick="appendtodisplay('*')" class="opreator">*</button>
+                <button onclick="appendtodisplay(1)">1</button>
+                <button onclick="appendtodisplay(2)">2</button>
+                <button onclick="appendtodisplay(3)">3</button>
+                <button onclick="appendtodisplay('-')" class="opreator">-</button>
+                <button onclick="appendtodisplay(0)">0</button>
+                <button onclick="appendtodisplay('.')">.</button>
+                <button onclick="calculate()"  class="equal">=</button>
+                <button onclick="appendtodisplay('+')" class="opreator">+</button>
+            </div>
+
+        </div>
+        <div id="apol">
+            <h1>عذرا</h1>
+            <p>يجب ان يكون عمرك 18 لاستخدام هذه الاله الحاسبه</p>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
